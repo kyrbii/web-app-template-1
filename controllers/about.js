@@ -4,7 +4,7 @@ const about = {
   index(request, response) {
     logger.info("about rendering");
     const viewData = {
-      title: "About Web app template"
+      title: "About Stream your Theme"
     };
     response.render("about", viewData);
   }
