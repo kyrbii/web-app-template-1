@@ -1,22 +1,19 @@
 <table class="table">
-  <thead>
-  <tr>
-      <th>Song</th>
-      <th>Artist</th>
-  </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Happy</td>
-          <td>Pharrell Williams</td>
-      </tr>
-      <tr>
-          <td>Get Lucky</td>
-          <td>Daft Punk</td>
-      </tr>
-      <tr>
-          <td>Don’t Worry, Be Happy</td>
-          <td>Bobby McFerrin</td>
-      </tr>
-  </tbody>
+    <thead>
+        <tr>
+            <th>Song</th>
+            <th>Artist</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each songs}}
+            <tr>
+                <td>{{title}}</td>
+                <td>{{artist}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
 </table>
+
+
+

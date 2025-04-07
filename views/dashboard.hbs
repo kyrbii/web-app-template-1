@@ -1,6 +1,10 @@
 {{> menu id="dashboard"}}
+<h3>Dashboard</h3>
+
 
 <div class="border p-2 my-2">
-  <h3>Dashboard</h3>
-  {{> listsongs}}
+  {{#each playLists}}
+    <h4>{{title}}</h4>
+    {{> listsongs}}
+  {{/each}}
 </div>
